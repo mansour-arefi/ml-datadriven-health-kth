@@ -2,7 +2,7 @@
 
 **Course:** CM2026 Advanced Machine Learning for Data-Driven Health, KTH Royal Institute of Technology  
 **Author:** Mansour Arefi  
-**Notebook:** `A3_Mansour_Arefi.ipynb`  
+**Notebook:** `Chest_XRay_Classification.ipynb`  
 **Dataset:** [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.1.0/) + [CheXpert labels](https://physionet.org/content/mimic-cxr-jpg/)
 
 > ⚠️ Raw data not included — requires PhysioNet credentialed access.
@@ -126,17 +126,17 @@ with open("output/vocabulary.json") as f:
 
 ```
 clinical-nlp-cxr-report-classification/
-├── A3_Mansour_Arefi.ipynb     # Full pipeline — run top to bottom
-├── requirements.txt           # Python dependencies
+├── Chest_XRay_Classification.ipynb     # Full pipeline — run top to bottom
+├── requirements.txt                    # Python dependencies
 └── output/
-    ├── bilstm_best.pt         # Best model weights (by val accuracy)
-    ├── model_config.json      # Architecture config for reloading
-    ├── vocabulary.json        # Token-to-index mapping
-    ├── training_curves.png    # Loss and accuracy over epochs
-    ├── roc_curves.png         # ROC curves — all three models
-    ├── confusion_matrices.png # Confusion matrices — test set
-    ├── model_comparison.png   # Bar chart: accuracy/F1/AUC comparison
-    └── eda_top_words.png      # Top discriminative words per class
+    ├── bilstm_best.pt                  # Best model weights (by val accuracy)
+    ├── model_config.json               # Architecture config for reloading
+    ├── vocabulary.json                 # Token-to-index mapping
+    ├── training_curves.png             # Loss and accuracy over epochs
+    ├── roc_curves.png                  # ROC curves — all three models
+    ├── confusion_matrices.png          # Confusion matrices — test set
+    ├── model_comparison.png            # Bar chart: accuracy/F1/AUC comparison
+    └── eda_top_words.png               # Top discriminative words per class
 ```
 
 > Paths in the notebook point to Kaggle (`/kaggle/input/...`). Update Cell 4 if running locally.
