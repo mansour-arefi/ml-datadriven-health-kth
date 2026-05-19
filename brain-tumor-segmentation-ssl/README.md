@@ -1,9 +1,9 @@
 # Brain Tumor Segmentation & Classification with Self-Supervised Multi-Task Learning
 
 **Course:** CM2026 Advanced Machine Learning for Data-Driven Health, KTH Royal Institute of Technology  
-**Group 8:** Qusai Al Haj Ali · Mansour Arefi · De Chi Hao · Shreyas Balakarthikeyan  
+**Group members:** Qusai Al Haj Ali · Mansour Arefi · De Chi Hao · Shreyas Balakarthikeyan  
 **Dataset:** [BRISC2025 — Kaggle](https://www.kaggle.com/datasets/briscdataset/brisc2025)  
-**Report:** [📄 GP_8_Report.pdf](./GP_8_Report.pdf)
+**Report:** [📄Report.pdf](./Report.pdf)
 
 ---
 
@@ -14,7 +14,7 @@ We develop two multi-task deep learning models for **simultaneous brain tumor se
 1. **Stage 1 — Self-supervised pre-training (MAE):** The encoder learns anatomical representations by reconstructing masked image patches — no labels required.
 2. **Stage 2 — Multi-task fine-tuning:** The pre-trained encoder is jointly optimised for pixel-wise segmentation (U-Net decoder) and 4-class tumor classification (classification head).
 
-An ablation study (`GP_8_NoSSL.ipynb`) runs the same fine-tuning pipeline **without** SSL pre-training to isolate the contribution of self-supervised learning.
+An ablation study (`Brain_Tumor_Segmentation_NoSSL.ipynb`) runs the same fine-tuning pipeline **without** SSL pre-training to isolate the contribution of self-supervised learning.
 
 **Classes:** Glioma · Meningioma · Pituitary Tumor · No Tumor
 
@@ -90,8 +90,8 @@ A **Masked Autoencoder** is trained on unlabelled MRI images before supervised f
 
 | Notebook | Description |
 |---|---|
-| `GP_8_SSL.ipynb` | **Primary.** MAE pre-training → multi-task fine-tuning |
-| `GP_8_NoSSL.ipynb` | **Ablation.** Multi-task fine-tuning only (no SSL) |
+| `Brain_Tumor_Segmentation_SSL.ipynb` | **Primary.** MAE pre-training → multi-task fine-tuning |
+| `Brain_Tumor_Segmentation_NoSSL.ipynb` | **Ablation.** Multi-task fine-tuning only (no SSL) |
 
 Both notebooks are fully self-contained and executable top-to-bottom. Two flags in Section 2 control execution:
 
@@ -139,7 +139,7 @@ Requires a Kaggle account. If automatic download fails, download manually from [
 
 ### 3. Run a notebook end to end
 
-Open `GP_8_SSL.ipynb` → run Cell A (local dataset config) → continue running all cells.  
+Open `Brain_Tumor_Segmentation_SSL.ipynb` → run Cell A (local dataset config) → continue running all cells.  
 Default flags (`LOCAL_QUICK_TEST=True`, `USE_PRETRAINED_CHECKPOINTS=True`) reproduce test results instantly.
 
 ---
@@ -148,9 +148,9 @@ Default flags (`LOCAL_QUICK_TEST=True`, `USE_PRETRAINED_CHECKPOINTS=True`) repro
 
 ```
 brain-tumor-segmentation-ssl/
-├── GP_8_SSL.ipynb                     # Primary: SSL pre-training + multi-task fine-tuning
-├── GP_8_NoSSL.ipynb                   # Ablation: multi-task only (no SSL)
-├── GP_8_Report.pdf                    # Written project report
+├── Brain_Tumor_Segmentation_SSL.ipynb                     # Primary: SSL pre-training + multi-task fine-tuning
+├── Brain_Tumor_Segmentation_NoSSL.ipynb                   # Ablation: multi-task only (no SSL)
+├── Report.pdf                    # Written project report
 ├── requirements.txt                   # Python dependencies
 └── pretrained_models/
     ├── best_model_resnet_SSL.pth      # ResNet18-UNet with SSL pre-training
