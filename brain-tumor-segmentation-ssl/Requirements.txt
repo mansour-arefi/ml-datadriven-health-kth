@@ -1,0 +1,15 @@
+#This Project is done by:
+#Qusai Al Haj Ali, Mansour Arefi, De Chi Hao, Shreyas Balakarthikeyan
+
+#The zip.file contains of two similar notebooks that shows two different runs of the same pipeline where one of them skip the self supervised Learning (see the report #for more details). We also saved the best model for both architecture in each notebook.
+
+# System Requirements:
+torch
+torchvision
+numpy
+scipy
+pandas
+pillow
+scikit-learn
+matplotlib
+ipython
