@@ -1,8 +1,8 @@
-# Assignment 1 — VT Alarm False Alarm Classification
+# VT Alarm False Alarm Classification
 
-**Course:** Machine Learning for Health, KTH Royal Institute of Technology  
+**Course:** Applied Machine Learning for Health (CM2011), KTH Royal Institute of Technology  
 **Dataset:** [VTaC — PhysioNet](https://physionet.org/content/vtac/)  
-**Notebook:** `Mansour_Arefi_assignment1_restructured.ipynb`
+**Notebook:** `False_Alarms.ipynb`
 
 ---
 
@@ -81,7 +81,7 @@ Dropping rows with missing signals outperformed median imputation in this datase
 
 ```
 assignment-1-false-alarms/
-├── Mansour_Arefi_assignment1_restructured.ipynb   # Full analysis
+├── False_Alarms.ipynb                             # Full analysis
 ├── utility_functions.py                           # WFDB scanning, feature extraction helpers
 ├── requirements.txt                               # Python dependencies
 └── README.md
