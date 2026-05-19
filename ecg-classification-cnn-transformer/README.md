@@ -2,7 +2,7 @@
 
 **Course:** CM2011 Machine Learning for Health, KTH Royal Institute of Technology  
 **Authors:** Mansour Arefi, Qusai Al Haj Ali  
-**Notebook:** `assignment3-final.ipynb`
+**Notebook:** `ECG_Classification.ipynb`
 
 **Datasets:**
 - [PTB-XL — PhysioNet](https://physionet.org/content/ptb-xl/1.0.3/) — 21,799 clinical 12-lead ECGs
@@ -115,7 +115,7 @@ All three methods consistently identify the same clinically meaningful ECG segme
 
 ```
 ecg-classification-cnn-transformer/
-├── assignment3-final.ipynb    # Full pipeline: data, model, training, evaluation, interpretability
+├── ECG_Classification.ipynb    # Full pipeline: data, model, training, evaluation, interpretability
 └── requirements.txt           # Python dependencies
 ```
 
