@@ -1,8 +1,8 @@
 # Sepsis Onset Prediction with GRU Neural Network
 
-**Course:** CM2011 Machine Learning for Health, KTH Royal Institute of Technology  
+**Course:** Applied Machine Learning for Health (CM2011), KTH Royal Institute of Technology  
 **Dataset:** [SepsisExp — Heidelberg University](https://www.cl.uni-heidelberg.de/statnlpgroup/sepsisexp/#data)  
-**Notebook:** `Mansour_Arefi_Assignment2.ipynb`
+**Notebook:** `Sepsis_Onset_Prediction.ipynb`
 
 ---
 
@@ -123,7 +123,7 @@ This suggests the model relies on a small, interpretable subset of clinical mark
 
 ```
 sepsis-onset-prediction/
-├── Mansour_Arefi_Assignment2.ipynb    # Full pipeline
+├── Sepsis_Onset_Prediction.ipynb      # Full pipeline
 ├── utility_functions.py               # GRU model, windowing, data loading helpers
 ├── requirements.txt                   # Python dependencies
 ├── learning_curves.png                # Training/validation loss curves
