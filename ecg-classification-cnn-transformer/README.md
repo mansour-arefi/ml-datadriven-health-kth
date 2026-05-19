@@ -1,6 +1,6 @@
 # Generalizable ECG Classification with CNN-Transformer
 
-**Course:** CM2011 Machine Learning for Health, KTH Royal Institute of Technology  
+**Course:** Applied Machine Learning for Health(CM2011), KTH Royal Institute of Technology  
 **Authors:** Mansour Arefi, Qusai Al Haj Ali  
 **Notebook:** `ECG_Classification.ipynb`
 
